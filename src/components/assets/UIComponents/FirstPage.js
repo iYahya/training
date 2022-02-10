@@ -35,4 +35,3 @@ class FirstPage extends Component {
 
 }
 export default FirstPage;
-//../components/assets/images/second.png
