@@ -1,4 +1,4 @@
-import {I18nManager, Platform} from 'react-native';
+/*import {I18nManager, Platform} from 'react-native';
 import I18n, {getLanguages} from 'react-native-i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import RNRestart from 'react-native-restart';
@@ -113,4 +113,4 @@ export function renderError(message) {
       delay: 0.2,
     },
   ));
-}
+}*/
