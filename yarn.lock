@@ -3457,11 +3457,6 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-i18n-js@3.0.11:
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.0.11.tgz#f9e96bdb641c5b9d6be12759d7c422089987ef02"
-  integrity sha512-v7dG3kYJTQTyox3NqDabPDE/ZotWntyMI9kh4cYi+XlCSnsIR+KBTS2opPyObL8WndnklcLzbNU92FP/mLge3Q==
-
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -5747,6 +5742,11 @@ react-native-codegen@^0.0.8:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-device-info@^8.4.8:
+  version "8.4.9"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-8.4.9.tgz#3089ea0bf9c9a28327d3ba683469a32b093172dd"
+  integrity sha512-EEdeoaBhaLTOZmCy5xtfepVAfvodteiDHoIxBPUgnNe5p0JLv90BLKtVytbJhlllWScUO48+2u9S7M6WNYsXDQ==
+
 react-native-gesture-handler@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.2.0.tgz#a551f9ca33d8766d0a24268f49e0f1b05191b105"
@@ -5758,12 +5758,10 @@ react-native-gesture-handler@^2.2.0:
     lodash "^4.17.21"
     prop-types "^15.7.2"
 
-react-native-i18n@^2.0.15:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/react-native-i18n/-/react-native-i18n-2.0.15.tgz#09b5a9836116fa7dbd0054c46e2d1014c1ef3c65"
-  integrity sha512-V8VwUP0TLda3oJvgt5tdnFaOV7WXPhTjCTLO7sXI3C2SHggSbD4bCUryMzNJhesimJidH21V2Owvj4zAylHoQQ==
-  dependencies:
-    i18n-js "3.0.11"
+react-native-ionicons@^4.6.5:
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/react-native-ionicons/-/react-native-ionicons-4.6.5.tgz#b792ec8896381e67ff237eba955e38afe7ceb7a4"
+  integrity sha512-s2Ia7M5t609LE9LWygMj3ALVPUlKhK7R9XcMb67fP4EYJv0oLcwg5pc+8ftv9XXaUuTW/WgL3zJlBYxAvtvMJg==
 
 react-native-iphone-x-helper@^1.3.1:
   version "1.3.1"
@@ -5775,7 +5773,7 @@ react-native-responsive-screen@^1.4.2:
   resolved "https://registry.yarnpkg.com/react-native-responsive-screen/-/react-native-responsive-screen-1.4.2.tgz#45280826d24f9accbfdf46a36cb8e6d780f76f28"
   integrity sha512-BLYz0UUpeohrib7jbz6wDmtBD5OmiuMRko4IT8kIF63taXPod/c5iZgmWnr5qOnK8hMuKiGMvsM3sC+eHX/lEQ==
 
-react-native-restart@^0.0.24:
+react-native-restart@0.0.24:
   version "0.0.24"
   resolved "https://registry.yarnpkg.com/react-native-restart/-/react-native-restart-0.0.24.tgz#c7036f25d900d9221b84d3e5129b02d4289d4e94"
   integrity sha512-pvJNU3NwQk6bCG2gOWcQpZ4IxhtELB0K9gzmtixfsaTFbW1UXXHkJNjk1kHazcbH5hrD7QbUkR63fsAVh8X4VQ==
