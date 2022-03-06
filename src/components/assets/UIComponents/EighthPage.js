@@ -1,132 +1,308 @@
 import React, { Component } from 'react';
-import { Image, Text, View, TouchableOpacity, ScrollView } from 'react-native';
+import {
+    Image,
+    Text,
+    View,
+    TouchableOpacity,
+    ScrollView,
+    StyleSheet,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { firstPageStyles } from "../styles/Styles.js";
+import {
+    styles,
+    colorNumberOne,
+    colorNumberTwo,
+    colorNumberTwentyTwo,
+    hp,
+    wp,
+} from '../styles/Styles.js';
 
 class EighthPage extends Component {
+    constructor() {
+        super();
+        this.state = {
+            showMap: false,
+        };
+    }
+
     render() {
-        return (
-            <ScrollView style={firstPageStyles.eighthPageView}>
-                <TouchableOpacity>
-                    <View style={firstPageStyles.eighthPageItemView}>
-                        <Icon name="arrow-forward" color={'red'} size={25} />
+        const { showMap } = this.state;
 
-                    </View>
-                </TouchableOpacity>
-                <View style={firstPageStyles.eighthPageListView}>
-                    <View style={firstPageStyles.eighthPageListViewContainer}>
-                        <View style={firstPageStyles.eighthPageListViewFirstContainer}>
-                            <Text style={firstPageStyles.eighthPageListViewFirstContainerText}>قائمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageListViewSecondContainer}>
-                            <Text style={firstPageStyles.eighthPageListViewSecondContainerText}>الخريطة</Text>
+        return showMap === false ? (
+            <View style={styles.eighthPageView}>
+                <View style={styles.eighthPageListView}>
+                    <View style={styles.eighthPageListViewContainer}>
+                        <TouchableOpacity
+                            style={{
+                                width: '40%',
 
-                        </View>
+                                height: '60%',
+                                borderWidth: showMap === false ? wp(0.1) : 0,
+                                backgroundColor:
+                                    showMap === false ? colorNumberTwo : colorNumberOne,
+                                borderRadius: showMap === false ? wp(3) : 0,
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                            onPress={() => {
+                                this.setState({ showMap: false });
+                            }}>
+                            <Text
+                                style={{
+                                    color:
+                                        showMap === false ? colorNumberOne : colorNumberTwentyTwo,
 
+                                    fontSize: hp(2),
+                                    fontFamily: 'Tajawal-Regular',
+                                }}>
+                                قائمة
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={{
+                                borderWidth: showMap ? wp(0.1) : 0,
+                                backgroundColor: showMap ? colorNumberTwo : colorNumberOne,
+                                borderRadius: showMap ? wp(3) : 0,
+                                width: '40%',
+
+                                height: '60%',
+
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                            onPress={() => {
+                                this.setState({ showMap: true });
+                            }}>
+                            <Text
+                                style={{
+                                    color:
+                                        showMap === false ? colorNumberTwentyTwo : colorNumberOne,
+
+                                    fontSize: hp(2),
+                                    fontFamily: 'Tajawal-Regular',
+                                }}>
+                                الخريطة
+                            </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
 
-                <View style={firstPageStyles.eighthPageIconViewContainer}>
-                    <View style={firstPageStyles.eighthPageIconViewFirstContainer}>
-                        <Image source={require("../images/search.png")} />
-                        <Text style={firstPageStyles.eighthPageIconViewFirstContainerText}>Mecca</Text>
+                <View style={styles.eighthPageIconViewContainer}>
+                    <View style={styles.eighthPageIconViewFirstContainer}>
+                        <Image source={require('../images/search.png')} />
+                        <Text style={styles.eighthPageIconViewFirstContainerText}>
+                            Mecca
+                        </Text>
+                    </View>
+                </View>
+                <ScrollView showsVerticalScrollIndicator={false} bounces={false}>
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
 
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
                     </View>
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.seventhPageSameContainerOne}>
+                        <View style={styles.seventhPageInnerFirstView}>
+                            <Image source={require('../images/bank.png')} />
+                        </View>
+                        <View style={styles.seventhPageInnerSecondView}>
+                            <View style={styles.seventhPageFirstContainer}>
+                                <Image source={require('../images/card.png')} />
+                                <Text style={styles.seventhPageFirstTextInContainer}>
+                                    عنوان المهمة
+                                </Text>
+                            </View>
+                            <View style={styles.seventhPageSecondContainer}>
+                                <Image source={require('../images/marker.png')} />
+                                <Text style={styles.seventhPageSecondTextInContainer}>
+                                    Mecca, Al Jumum
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+                </ScrollView>
+            </View>
+        ) : (
+            <View style={{ height: hp(93), backgroundColor: colorNumberOne }}>
+                <View style={{
+                    height: hp(8),
+                    alignItems: 'center',
+                    backgroundColor: colorNumberOne,
+                }}>
+                    <View style={styles.eighthPageListViewContainer}>
+                        <TouchableOpacity
+                            style={{
+                                width: '40%',
+
+                                height: '60%',
+                                borderWidth: showMap === false ? wp(0.1) : 0,
+                                backgroundColor:
+                                    showMap === false ? colorNumberTwo : colorNumberOne,
+                                borderRadius: showMap === false ? wp(3) : 0,
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                            onPress={() => {
+                                this.setState({ showMap: false });
+                            }}>
+                            <Text
+                                style={{
+                                    color:
+                                        showMap === false ? colorNumberOne : colorNumberTwentyTwo,
+
+                                    fontSize: hp(2),
+                                    fontFamily: 'Tajawal-Regular',
+                                }}>
+                                قائمة
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={{
+                                borderWidth: showMap ? wp(0.1) : 0,
+                                backgroundColor: showMap ? colorNumberTwo : colorNumberOne,
+                                borderRadius: showMap ? wp(3) : 0,
+                                width: '40%',
+
+                                height: '60%',
+
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                            onPress={() => {
+                                this.setState({ showMap: true });
+                            }}>
+                            <Text
+                                style={{
+                                    color:
+                                        showMap === false ? colorNumberTwentyTwo : colorNumberOne,
+
+                                    fontSize: hp(2),
+                                    fontFamily: 'Tajawal-Regular',
+                                }}>
+                                الخريطة
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={{ backgroundColor: colorNumberOne, height: hp(85), marginTop: hp(1) }}>
+                    <Image source={require('../images/map.png')} />
+
                 </View>
 
 
-                <View style={firstPageStyles.eighthPageSameContainerOne}>
-                    <View style={firstPageStyles.eighthPageInnerFirstView}>
-                        <Image source={require("../images/bank.png")} />
-                    </View>
-                    <View style={firstPageStyles.eighthPageInnerSecondView}>
-                        <View style={firstPageStyles.eighthPageFirstContainer}>
-                            <Image source={require("../images/card.png")} />
-                            <Text style={firstPageStyles.eighthPageFirstTextInContainer}> عنوان المهمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageSecondContainer}>
-                            <Image source={require("../images/marker.png")} />
-                            <Text style={firstPageStyles.eighthPageSecondTextInContainer}>Mecca, Al Jumum</Text>
-                        </View>
-                    </View>
-                </View>
-                <View style={firstPageStyles.eighthPageSameContainerTwo}>
-                    <View style={firstPageStyles.eighthPageInnerFirstView}>
-                        <Image source={require("../images/bank.png")} />
-                    </View>
-                    <View style={firstPageStyles.eighthPageInnerSecondView}>
-                        <View style={firstPageStyles.eighthPageFirstContainer}>
-                            <Image source={require("../images/card.png")} />
-                            <Text style={firstPageStyles.eighthPageFirstTextInContainer}> عنوان المهمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageSecondContainer}>
-                            <Image source={require("../images/marker.png")} />
-                            <Text style={firstPageStyles.eighthPageSecondTextInContainer}>Mecca, Al Jumum</Text>
-                        </View>
-                    </View>
-                </View>
-                <View style={firstPageStyles.eighthPageSameContainerTwo}>
-                    <View style={firstPageStyles.eighthPageInnerFirstView}>
-                        <Image source={require("../images/bank.png")} />
-                    </View>
-                    <View style={firstPageStyles.eighthPageInnerSecondView}>
-                        <View style={firstPageStyles.eighthPageFirstContainer}>
-                            <Image source={require("../images/card.png")} />
-                            <Text style={firstPageStyles.eighthPageFirstTextInContainer}> عنوان المهمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageSecondContainer}>
-                            <Image source={require("../images/marker.png")} />
-                            <Text style={firstPageStyles.eighthPageSecondTextInContainer}>Mecca, Al Jumum</Text>
-                        </View>
-                    </View>
-                </View>
-                <View style={firstPageStyles.eighthPageSameContainerTwo}>
-                    <View style={firstPageStyles.eighthPageInnerFirstView}>
-                        <Image source={require("../images/bank.png")} />
-                    </View>
-                    <View style={firstPageStyles.eighthPageInnerSecondView}>
-                        <View style={firstPageStyles.eighthPageFirstContainer}>
-                            <Image source={require("../images/card.png")} />
-                            <Text style={firstPageStyles.eighthPageFirstTextInContainer}> عنوان المهمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageSecondContainer}>
-                            <Image source={require("../images/marker.png")} />
-                            <Text style={firstPageStyles.eighthPageSecondTextInContainer}>Mecca, Al Jumum</Text>
-                        </View>
-                    </View>
-                </View>
-                <View style={firstPageStyles.eighthPageSameContainerTwo}>
-                    <View style={firstPageStyles.eighthPageInnerFirstView}>
-                        <Image source={require("../images/bank.png")} />
-                    </View>
-                    <View style={firstPageStyles.eighthPageInnerSecondView}>
-                        <View style={firstPageStyles.eighthPageFirstContainer}>
-                            <Image source={require("../images/card.png")} />
-                            <Text style={firstPageStyles.eighthPageFirstTextInContainer}> عنوان المهمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageSecondContainer}>
-                            <Image source={require("../images/marker.png")} />
-                            <Text style={firstPageStyles.eighthPageSecondTextInContainer}>Mecca, Al Jumum</Text>
-                        </View>
-                    </View>
-                </View>
-                <View style={firstPageStyles.eighthPageSameContainerTwo}>
-                    <View style={firstPageStyles.eighthPageInnerFirstView}>
-                        <Image source={require("../images/bank.png")} />
-                    </View>
-                    <View style={firstPageStyles.eighthPageInnerSecondView}>
-                        <View style={firstPageStyles.eighthPageFirstContainer}>
-                            <Image source={require("../images/card.png")} />
-                            <Text style={firstPageStyles.eighthPageFirstTextInContainer}> عنوان المهمة</Text>
-                        </View>
-                        <View style={firstPageStyles.eighthPageSecondContainer}>
-                            <Image source={require("../images/marker.png")} />
-                            <Text style={firstPageStyles.eighthPageSecondTextInContainer}>Mecca, Al Jumum</Text>
-                        </View>
-                    </View>
-                </View>
-            </ScrollView>
+            </View>
         );
     }
 }
+
 export default EighthPage;

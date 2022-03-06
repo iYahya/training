@@ -1,181 +1,126 @@
-import React, {Component} from 'react';
-import {Image, Text, View, TouchableOpacity, TextInput} from 'react-native';
+import React, { Component } from 'react';
+import { Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
 
-import {firstPageStyles} from '../styles/Styles.js';
+import { styles } from '../styles/Styles.js';
 class FifthPage extends Component {
   render() {
     return (
-      <View style={firstPageStyles.fifthPageView}>
-        <View style={firstPageStyles.fifthPageItemView}>
+      <View style={styles.fifthPageView}>
+        <View style={styles.fifthPageItemView}>
           <Image source={require('../images/line.png')} />
-          <Text style={firstPageStyles.fifthPageSeventhText}>الرئيسية </Text>
+          <Text style={styles.fifthPageSeventhText}>الرئيسية </Text>
         </View>
 
-        <View style={firstPageStyles.fifthPagePersonView}>
-          <View style={firstPageStyles.fifthPagePersonContainer}>
+        <View style={styles.fifthPagePersonView}>
+          <View style={styles.fifthPagePersonContainer}>
             <Image
-              style={firstPageStyles.fifthPageFirstImage}
+              style={styles.fifthPageFirstImage}
               source={require('../images/person.jpg')}
             />
-            <View style={firstPageStyles.fifthPageContainerView}>
-              <Text style={firstPageStyles.fifthPageFirstContainerText}>
-                مرحبا بك
-              </Text>
-              <Text style={firstPageStyles.fifthPageSecondContainerText}>
+            <View style={styles.fifthPageContainerView}>
+              <Text style={styles.fifthPageFirstContainerText}>مرحبا بك</Text>
+              <Text style={styles.fifthPageSecondContainerText}>
                 محمد العلي
               </Text>
             </View>
           </View>
-          <View>
-            <View style={firstPageStyles.fifthPageCircleStyle}></View>
+          <View style={styles.fifthPageCircleViewStyle}>
+            <View style={styles.fifthPageCircleStyle}></View>
             <Image source={require('../images/circle.png')} />
           </View>
         </View>
 
-        <View style={firstPageStyles.fifthPageColoredContainer}>
-          <View style={firstPageStyles.fifthPageFirstColoredContainer}>
-            <Text style={firstPageStyles.fifthPageFirstColoredText}>
-              إجمالي المهمات
-            </Text>
-            <Text style={firstPageStyles.fifthPageSecondColoredText}> 21</Text>
+        <View style={styles.fifthPageColoredContainer}>
+          <View style={styles.fifthPageFirstColoredContainer}>
+            <Text style={styles.fifthPageFirstColoredText}>إجمالي المهمات</Text>
+            <Text style={styles.fifthPageSecondColoredText}> 21</Text>
           </View>
-          <View style={firstPageStyles.fifthPageSecondColoredContainer}>
-            <Text style={firstPageStyles.fifthPageFirstColoredText}>
-              مهمات منتهية{' '}
-            </Text>
-            <Text style={firstPageStyles.fifthPageSecondColoredText}> 4</Text>
+          <View style={styles.fifthPageSecondColoredContainer}>
+            <Text style={styles.fifthPageFirstColoredText}>مهمات منتهية</Text>
+            <Text style={styles.fifthPageSecondColoredText}> 4</Text>
           </View>
-          <View style={firstPageStyles.fifthPageThirdColoredContainer}>
-            <Text style={firstPageStyles.fifthPageThirdColoredText}>
-              {' '}
-              مهمات جديدة{' '}
-            </Text>
-            <Text style={firstPageStyles.fifthPageFourthColoredText}> 11</Text>
+          <View style={styles.fifthPageThirdColoredContainer}>
+            <Text style={styles.fifthPageThirdColoredText}>مهمات جديدة</Text>
+            <Text style={styles.fifthPageFourthColoredText}> 11</Text>
           </View>
         </View>
 
-        <View style={firstPageStyles.fifthPageColoredContainerTwo}>
-          <Text style={firstPageStyles.fifthPageColoredContainerTwoFirstText}>
+        <View style={styles.fifthPageColoredContainerTwo}>
+          <Text style={styles.fifthPageColoredContainerTwoFirstText}>
             أحدث الطلبات
           </Text>
-          <Text style={firstPageStyles.fifthPageColoredContainerTwoSecondText}>
+          <Text style={styles.fifthPageColoredContainerTwoSecondText}>
             ___02
           </Text>
         </View>
-        <View style={firstPageStyles.fifthPageRequestContainer}>
+        <View style={styles.fifthPageRequestContainer}>
           <View></View>
-          <View style={firstPageStyles.fifthPageRequestContainerOne}>
-            <Text style={firstPageStyles.fifthPageRequestContainerFirstText}>
+          <View style={styles.fifthPageRequestContainerOne}>
+            <Text style={styles.fifthPageRequestContainerFirstText}>
               عنوان الطلب
             </Text>
-            <Text style={firstPageStyles.fifthPageRequestContainerSecondText}>
+            <Text style={styles.fifthPageRequestContainerSecondText}>
               هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
               سيلهي القارئ عن التركيز على الشكل الخارجي للنص
             </Text>
           </View>
 
-          <View style={firstPageStyles.fifthPageInnerRequestContainer}>
-            <View style={firstPageStyles.fifthPageInnerRequestContainerOne}>
-              <Text
-                style={firstPageStyles.fifthPageInnerRequestContainerFirstText}>
+          <View style={styles.fifthPageInnerRequestContainer}>
+            <View style={styles.fifthPageInnerRequestContainerOne}>
+              <Text style={styles.fifthPageInnerRequestContainerFirstText}>
                 مسئول الطلب
               </Text>
-              <Text
-                style={
-                  firstPageStyles.fifthPageInnerRequestContainerSecondText
-                }>
+              <Text style={styles.fifthPageInnerRequestContainerSecondText}>
                 عادل سعيد
               </Text>
             </View>
-            <View style={firstPageStyles.fifthPageInnerRequestContainerTwo}>
-              <View
-                style={firstPageStyles.fifthPageInnerRequestContainerThirdView}>
-                <Text
-                  style={
-                    firstPageStyles.fifthPageInnerRequestContainerThirdText
-                  }>
-                  تاريخ الرد
-                </Text>
+            <View style={styles.fifthPageInnerRequestContainerTwo}>
+              <View style={styles.fifthPageInnerRequestContainerThirdView}>
+                <View style={styles.fifthPageInnerRequestContainerAlignView}>
+                  <Text style={styles.fifthPageInnerRequestContainerThirdText}>
+                    تاريخ الرد
+                  </Text>
+                </View>
               </View>
 
-              <View
-                style={
-                  firstPageStyles.fifthPageInnerRequestContainerFourthView
-                }>
-                <Text
-                  style={
-                    firstPageStyles.fifthPageInnerRequestContainerFourthText
-                  }>
+              <View style={styles.fifthPageInnerRequestContainerAlignView}>
+                <Text style={styles.fifthPageInnerRequestContainerFourthText}>
                   Dec 18, 2019
                 </Text>
               </View>
             </View>
-            <View style={firstPageStyles.fifthPageInnerRequestContainerOne}>
-              <Text
-                style={firstPageStyles.fifthPageInnerRequestContainerFithText}>
+            <View style={styles.fifthPageInnerRequestContainerOne}>
+              <Text style={styles.fifthPageInnerRequestContainerFithText}>
                 حالة الطلب
               </Text>
-              <Text
-                style={firstPageStyles.fifthPageInnerRequestContainerSixthText}>
+              <Text style={styles.fifthPageInnerRequestContainerSixthText}>
                 مرفوض
               </Text>
             </View>
           </View>
         </View>
-        <Text style={firstPageStyles.fifthPageRedText}>المسئول المباشر </Text>
+        <Text style={styles.fifthPageRedText}>المسئول المباشر </Text>
 
-        <View style={firstPageStyles.fifthPagePersonView}>
-          <View style={firstPageStyles.fifthPagePersonContainer}>
+        <View style={styles.fifthPagePersonView}>
+          <View style={styles.fifthPagePersonContainer}>
             <Image
-              style={firstPageStyles.fifthPageFirstImage}
+              style={styles.fifthPageFirstImage}
               source={require('../images/personTwo.png')}
             />
-            <View style={firstPageStyles.fifthPageContainerView}>
-              <Text style={firstPageStyles.fifthPagePersonFirstText}>
-                رضا المرزوقي
-              </Text>
-              <Text style={firstPageStyles.fifthPagePersonSecondText}>
+            <View style={styles.fifthPageContainerView}>
+              <Text style={styles.fifthPagePersonFirstText}>رضا المرزوقي</Text>
+              <Text style={styles.fifthPagePersonSecondText}>
                 مدير الجهة الإعلامية
               </Text>
             </View>
           </View>
         </View>
-        <View style={firstPageStyles.fifthPagePersonView}>
-          <View style={firstPageStyles.fifthPageIconContainer}>
+        <View style={styles.fifthPageIconContainerView}>
+          <View style={styles.fifthPageIconContainer}>
             <Image source={require('../images/phoneTwo.png')} />
           </View>
-          <View style={firstPageStyles.fifthPageIconContainer}>
+          <View style={styles.fifthPageIconContainer}>
             <Image source={require('../images/window.png')} />
-          </View>
-          <View style={firstPageStyles.fifthPageIconTwoContainer}></View>
-        </View>
-
-        <View style={firstPageStyles.fifthPageBottomView}>
-          <View style={firstPageStyles.fifthPageInnerBottomView}>
-            <View>
-              <Image source={require('../images/home.png')} />
-              <Text style={firstPageStyles.fifthPageFirstBottomText}>
-                الرئيسية{' '}
-              </Text>
-            </View>
-            <View>
-              <Image source={require('../images/order.png')} />
-              <Text style={firstPageStyles.fifthPageSecondBottomText}>
-                الطلبات{' '}
-              </Text>
-            </View>
-            <View>
-              <Image source={require('../images/note.png')} />
-              <Text style={firstPageStyles.fifthPageSecondBottomText}>
-                الإشعارات{' '}
-              </Text>
-            </View>
-            <View>
-              <Image source={require('../images/settings.png')} />
-              <Text style={firstPageStyles.fifthPageSecondBottomText}>
-                الإعدادات{' '}
-              </Text>
-            </View>
           </View>
         </View>
       </View>
@@ -183,3 +128,37 @@ class FifthPage extends Component {
   }
 }
 export default FifthPage;
+/* 
+
+
+        <View style={styles.fifthPageBottomView}>
+          <View style={styles.fifthPageInnerBottomView}>
+            <View>
+              <Image source={require('../images/home.png')} />
+              <Text style={styles.fifthPageFirstBottomText}>
+                الرئيسية
+              </Text>
+            </View>
+            <View>
+              <Image source={require('../images/order.png')} />
+              <Text style={styles.fifthPageSecondBottomText}>
+                الطلبات
+              </Text>
+            </View>
+            <View>
+              <Image source={require('../images/note.png')} />
+              <Text style={styles.fifthPageSecondBottomText}>
+                الإشعارات
+              </Text>
+            </View>
+            <View>
+              <Image source={require('../images/settings.png')} />
+              <Text style={styles.fifthPageSecondBottomText}>
+                الإعدادات
+              </Text>
+            </View>
+          </View>
+        </View>
+
+
+*/

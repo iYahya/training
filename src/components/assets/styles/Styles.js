@@ -1,69 +1,107 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
 export const wp = widthPercentageToDP;
 export const hp = heightPercentageToDP;
+export const colorNumberOne = "#ffffff";
+export const colorNumberTwo = "#3c245f";
+export const colorNumberThree = "#2d2a2a";
+export const colorNumberFour = "#6f6f6f";
+export const colorNumberFive = "#e8272d";
+export const colorNumberSix = "#6b6b6b";
+export const colorNumberSeven = "#e0e0e0";
+export const colorNumberEight = "#f2a400";
 
-export const firstPageStyles = StyleSheet.create({
+export const colorNumberNine = '#000000';
+export const colorNumberTen = "#100e0e";
+export const colorNumberEelven = "#259146";
+export const colorNumberTwelve = "#0d204c";
+export const colorNumberThirteen = "#d65c20";
+export const colorNumberFourteen = "#f2f2f2";
+export const colorNumberFifteen = "#928989";
+export const colorNumberSixteen = '#afafaf';
+export const colorNumberSeventeen = '#55ce5d';
+export const colorNumberEighteen = '#f05959';
+export const colorNumberNineteen = '#4b504d';
+export const colorNumberTwenty = '#e7e7e7';
+export const colorNumberTwentyOne = '#a6a6a6';
+export const colorNumberTwentyTwo = '#1d1c1c';
+export const colorNumberTwentyThree = '#454f63';
+export const colorNumberTwentyFour = '#4a4a4a';
+export const textColorOne = "#030303";
+
+export const fontNumberOne = "Tajawal-Medium";
+export const fontNumberTwo = "Tajawal-Bold";
+export const fontNumberThree = "Tajawal-Light";
+export const fontNumberFour = "Tajawal-Regular";
+
+export const styles = StyleSheet.create({
   firstPageFirstView: {
-    flex: 1,
+    backgroundColor: colorNumberOne,
+
+    height: hp(100),
   },
 
   firstPageSecondView: {
-    backgroundColor: '#ffffff',
-    flex: 6,
+    backgroundColor: colorNumberOne,
+
+
+    height: hp(90),
     justifyContent: 'center',
     alignItems: 'center',
   },
   firstPageFirstText: {
     color: '#1d1d1d',
-    fontSize: 30,
-    paddingBottom: 15,
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(5),
+    paddingBottom: hp(3),
+    fontFamily: fontNumberOne,
   },
   firstPageSecondText: {
-    paddingTop: 25,
-    color: '#030303',
-    fontSize: 14,
-    paddingBottom: 10,
-    fontFamily: 'Tajawal-Bold',
+    paddingTop: hp(8),
+    color: textColorOne,
+    fontSize: hp(2.5),
+    paddingBottom: hp(3),
+    fontFamily: fontNumberTwo,
   },
   firstPageView: {
     flexDirection: 'row',
+    width: wp(35),
+    justifyContent: "space-between",
   },
   firstPageThirdText: {
-    color: '#030303',
-    fontSize: 15,
-    fontFamily: 'Tajawal-Bold',
+    color: textColorOne,
+    fontSize: hp(2.5),
+    fontFamily: fontNumberOne,
   },
   firstPageFourthText: {
     color: '#cbcbcb',
-    fontSize: 15,
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(2.5),
+    fontFamily: fontNumberThree,
   },
   primaryButton: {
-    backgroundColor: '#3c245f',
+    backgroundColor: colorNumberTwo,
     justifyContent: 'center',
     alignItems: 'center',
     borderTopLeftRadius: wp(8),
     borderTopRightRadius: wp(8),
-    height: hp(9),
+    height: hp(10),
     width: wp(90),
     alignSelf: 'center',
   },
   firstPageFifthText: {
-    color: '#ffffff',
-    fontSize: 15,
-    fontSize: 18,
-    // fontWeight: 'bold',
-    fontFamily: 'Tajawal-Bold',
+    color: colorNumberOne,
+    fontSize: hp(2.8),
+
+    fontFamily: fontNumberTwo,
   },
 
-  secondPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
+  buttonBottomText: {
+    color: colorNumberOne,
+    fontSize: hp(2.8),
+
+    fontFamily: fontNumberTwo,
   },
   secondPageItemView: {
     flexDirection: 'row',
@@ -73,82 +111,72 @@ export const firstPageStyles = StyleSheet.create({
   },
 
   secondPageFirstView: {
-    flex: 1,
+    // flex: 1,
+    height: hp(93),
+    backgroundColor: colorNumberOne,
+
+
   },
   secondPageSecondView: {
     backgroundColor: '#ffffff',
-    flex: 6,
+    // flex: 6,
+    height: "90%",
     justifyContent: 'center',
     alignItems: 'center',
   },
   secondPageFirstText: {
-    color: '#1d1d1d',
-    fontSize: 30,
-    paddingBottom: 15,
+    color: colorNumberThree,
+    fontSize: hp(3.5),
+
     fontFamily: 'Tajawal-Bold',
+    paddingTop: hp(2),
+    paddingBottom: hp(2),
   },
   secondPageSecondText: {
-    paddingTop: 25,
-    color: '#6f6f6f',
-    fontSize: 14,
-    paddingBottom: 15,
-    fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 20,
+
+    color: colorNumberFour,
+    fontSize: hp(2.5),
+    lineHeight: hp(3.5),
+
+    fontFamily: 'Tajawal-Regular',
+    paddingHorizontal: wp(6),
   },
-  secondPageViewOne: {
-    width: '50%',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
-  secondPageRoundedContainerOne: {
-    height: 30,
-    width: 30,
-    borderRadius: 15,
-    backgroundColor: '#D3D3D3',
-  },
-  secondPageRoundedContainerTwo: {
-    height: 30,
-    width: 30,
-    borderRadius: 15,
-    backgroundColor: '#D3D3D3',
-  },
-  secondPageRoundedContainerThree: {
-    height: 30,
-    width: 30,
-    borderRadius: 15,
-    backgroundColor: '#3c245f',
-  },
+
+
+
   secondPageBottom: {
-    flex: 1,
+
+    height: "10%",
     flexDirection: 'row',
-    backgroundColor: '#ffffff',
+    backgroundColor: colorNumberOne,
+
+
   },
   secondPageThirdView: {
     backgroundColor: '#3c245f',
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
-    borderTopRightRadius: 50,
+    width: wp(50),
+    borderTopRightRadius: wp(9),
   },
   secondPageFifthText: {
-    color: '#ffffff',
-    fontSize: 15,
+    color: colorNumberOne,
+    fontSize: hp(2.5),
 
-    fontWeight: 'bold',
     fontFamily: 'Tajawal-Bold',
   },
   secondPageFourthView: {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    backgroundColor: '#ffffff',
-    flex: 1,
+    backgroundColor: colorNumberOne,
+    width: wp(50),
+
   },
   secondPageSixthText: {
-    color: '#2d2a2a',
-    marginLeft: 5,
-    fontSize: 18,
-    fontWeight: 'bold',
+    color: colorNumberThree,
+    marginLeft: wp(1.5),
+    fontSize: hp(2.5),
     fontFamily: 'Tajawal-Bold',
   },
   secondPageSeventhText: {
@@ -158,10 +186,7 @@ export const firstPageStyles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Tajawal-Bold',
   },
-  thirdPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
+
   thirdPageItemView: {
     flexDirection: 'row',
     backgroundColor: '#ffffff',
@@ -176,38 +201,30 @@ export const firstPageStyles = StyleSheet.create({
     fontFamily: 'Tajawal-Bold',
   },
   thirdPageFirstView: {
-    flex: 1,
+    height: hp(93),
+    backgroundColor: colorNumberOne,
   },
   thirdPageSecondView: {
-    backgroundColor: '#ffffff',
-    flex: 6,
+    backgroundColor: colorNumberOne,
+    height: "90%",
+    paddingTop: hp(8),
   },
   thirdPageFirstText: {
-    paddingTop: 25,
-    color: '#030303',
-    fontSize: 14,
-    paddingBottom: 30,
+    color: textColorOne,
+    fontSize: hp(2),
     fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 20,
+    marginHorizontal: wp(5),
+    marginBottom: hp(3),
   },
-  thirdPageSecondText: {
-    color: '#3c245f',
-    fontSize: 13,
-    fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 20,
-  },
+
   thirdPageFirstTextInput: {
-    borderBottomColor: '#3c245f',
-    borderBottomWidth: 1.5,
-    marginHorizontal: 10,
-    marginBottom: 20,
+    borderBottomColor: colorNumberTwo,
+
+    marginHorizontal: wp(5),
+    marginBottom: hp(2),
+    backgroundColor: colorNumberOne,
   },
-  thirdPageThirdText: {
-    color: '#6b6b6b',
-    fontSize: 13,
-    fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 20,
-  },
+
   thirdPageIconDirection: {
     width: '100%',
     alignItems: 'flex-end',
@@ -216,66 +233,56 @@ export const firstPageStyles = StyleSheet.create({
     marginHorizontal: 10,
   },
   thirdPageSecondTextInput: {
-    borderBottomColor: '#e7e7e7',
-    borderBottomWidth: 1.5,
-    marginHorizontal: 10,
+    marginHorizontal: wp(5),
+
+
     marginBottom: 25,
+    backgroundColor: colorNumberOne,
+
   },
   thirdPageFifthView: {
     flexDirection: 'row',
-    marginHorizontal: 10,
+    marginHorizontal: wp(5),
     justifyContent: 'space-between',
   },
   thirdPageSeventhView: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  thirdPageSixthView: {
-    borderColor: '#d2d2d2',
-    borderWidth: 1,
-    height: 30,
-    width: 30,
-    borderRadius: 10,
-  },
+
+
   thirdPageEighthText: {
-    color: '#030303',
-    marginLeft: 5,
-    fontSize: 11,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    color: textColorOne,
+    marginLeft: wp(1),
+    fontSize: hp(1.6),
+    fontFamily: " Tajawal-Medium",
   },
   thirdPagePasswordView: {
     justifyContent: 'center',
   },
   thirdPagePasswordText: {
-    color: '#3c245f',
-    marginLeft: 5,
-    fontSize: 11,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    color: colorNumberTwo,
+    fontSize: hp(1.6),
+    fontFamily: 'Tajawal-Medium',
   },
-  thirdPageBottom: {
-    flex: 1,
-    flexDirection: 'row',
-    backgroundColor: '#ffffff',
-  },
+
   thirdPageThirdView: {
-    backgroundColor: '#3c245f',
+    height: "10%",
+
+    backgroundColor: colorNumberTwo,
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
-    borderTopRightRadius: 30,
-    borderTopLeftRadius: 30,
-    marginHorizontal: 20,
+
+    borderTopRightRadius: wp(8),
+    borderTopLeftRadius: wp(8),
+    marginHorizontal: wp(5),
   },
   thirdPageFifthText: {
-    color: '#ffffff',
-    fontSize: 18,
+    color: colorNumberOne,
+    fontSize: hp(2.5),
+    fontFamily: "Tajawal-Bold",
   },
-  fourthPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
+
   fourthPageItemView: {
     flexDirection: 'row',
     backgroundColor: '#ffffff',
@@ -290,42 +297,53 @@ export const firstPageStyles = StyleSheet.create({
     fontFamily: 'Tajawal-Bold',
   },
   fourthPageFirstView: {
-    flex: 1,
+    height: hp(93),
+    paddingTop: hp(9),
+    backgroundColor: colorNumberOne,
   },
   fourthPageSecondView: {
-    backgroundColor: '#ffffff',
-    flex: 6,
+    backgroundColor: colorNumberOne,
+    height: "90%",
   },
   fourthPageFirstText: {
-    paddingTop: 25,
-    color: '#030303',
-    fontSize: 14,
-    paddingBottom: 30,
+    color: textColorOne,
+    fontSize: hp(1.9),
+    marginBottom: hp(2),
     fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 20,
+    marginHorizontal: wp(5),
   },
   fourthPageImageView: {
     width: '100%',
     alignItems: 'center',
-    marginBottom: 40,
+    marginBottom: hp(6),
   },
   fourthPageLineView: {
     width: '70%',
-    marginBottom: 10,
+    marginBottom: hp(1),
+    backgroundColor: "yellow",
   },
   fourthPageFirstLine: {
-    color: '#e8272d',
+    color: colorNumberFive,
 
-    fontSize: 18,
+    fontSize: hp(2.8),
     fontWeight: 'bold',
     fontFamily: 'Tajawal-Bold',
   },
-  fourthPageRowView: {
-    marginLeft: 20,
+
+  textInputView: {
+    marginHorizontal: wp(12),
     flexDirection: 'row',
     width: '70%',
     justifyContent: 'space-between',
-    marginBottom: 40,
+    marginBottom: hp(7),
+  },
+  firstTextInputView: {
+    borderBottomColor: colorNumberFive,
+    borderBottomWidth: hp(.6),
+  },
+  secondTextInputView: {
+    borderBottomColor: colorNumberSeven,
+    borderBottomWidth: hp(.6),
   },
   fourthPageSecondLineView: {
     backgroundColor: '#e0e0e0',
@@ -342,305 +360,325 @@ export const firstPageStyles = StyleSheet.create({
     alignItems: 'center',
   },
   fourthPageMessageText: {
-    color: '#3c245f',
+    color: colorNumberTwo,
 
-    fontSize: 20,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(2.3),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fourthPageMessageLineView: {
-    marginTop: 3,
-    height: 3,
-    width: 102,
-    backgroundColor: '#3c245f',
+    marginTop: hp(.7),
+    height: hp(.3),
+    width: wp(19),
+    backgroundColor: colorNumberTwo,
   },
   fourthPageBottom: {
-    flex: 1,
+    height: "10%",
     flexDirection: 'row',
-    backgroundColor: '#ffffff',
+    backgroundColor: colorNumberOne,
+    marginHorizontal: wp(3),
   },
   fourthPageThirdView: {
-    backgroundColor: '#3c245f',
+    backgroundColor: colorNumberTwo,
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
-    borderTopRightRadius: 30,
-    borderTopLeftRadius: 30,
-    marginHorizontal: 20,
+    width: "100%",
+    borderTopRightRadius: wp(8),
+    borderTopLeftRadius: wp(8),
+
   },
   fourthPageFifthText: {
-    color: '#ffffff',
-    fontSize: 18,
+    color: colorNumberOne,
+    fontSize: hp(2.9),
 
-    fontWeight: 'bold',
     fontFamily: 'Tajawal-Bold',
   },
   fifthPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
+    height: hp(100),
+    backgroundColor: colorNumberOne,
+
   },
   fifthPageItemView: {
     flexDirection: 'row',
-    backgroundColor: '#ffffff',
+    backgroundColor: colorNumberOne,
     alignItems: 'center',
-    margin: 5,
+    marginHorizontal: wp(4),
   },
   fifthPageSeventhText: {
-    color: '#e8272d',
-    marginLeft: 5,
-    fontSize: 25,
-    fontWeight: 'bold',
+    color: colorNumberFive,
+    fontSize: hp(3.2),
     fontFamily: 'Tajawal-Bold',
-    marginLeft: 20,
+    marginLeft: wp(4),
   },
 
   fifthPagePersonView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginHorizontal: 15,
-    marginBottom: 8,
+    marginHorizontal: wp(4),
+    marginBottom: hp(3),
+    marginTop: hp(2.2),
   },
   fifthPageFirstImage: {
-    height: 80,
-    width: 80,
-    borderRadius: 40,
+    height: hp(8),
+    width: hp(8),
+    borderRadius: hp(4),
+
+  },
+  fifthPageIconContainer: {
+    height: hp(6),
+    width: hp(6),
+    borderRadius: hp(3),
+    marginHorizontal: wp(4),
+    borderColor: colorNumberFourteen,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: hp(.1),
+  },
+  fifthPageIconContainerView: {
+    flexDirection: "row",
   },
   fifthPageContainerView: {
-    marginLeft: 20,
+    marginLeft: wp(3),
   },
 
   fifthPageFirstContainerText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: hp(2),
+
     fontFamily: 'Tajawal-Bold',
   },
   fifthPageSecondContainerText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.9),
+
+    fontFamily: 'Tajawal-Medium',
+  },
+  fifthPageCircleViewStyle: {
+    marginRight: wp(6),
   },
   fifthPageCircleStyle: {
     position: 'absolute',
-    left: -3,
-    height: 10,
-    width: 10,
-    borderRadius: 5,
+    left: hp(-.4),
+    height: hp(1.8),
+    width: hp(1.8),
+    borderRadius: hp(.9),
     backgroundColor: 'black',
   },
   fifthPageColoredContainer: {
     width: '100%',
-
     flexDirection: 'row',
-    marginBottom: 5,
+    marginBottom: hp(3),
+
   },
   fifthPageFirstColoredContainer: {
-    backgroundColor: '#e8272d',
-    height: 100,
-    width: 100,
-    borderRadius: 15,
+    backgroundColor: colorNumberFive,
+    height: hp(12),
+    width: wp(26),
+    borderRadius: wp(3),
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 15,
-    marginRight: 15,
+    marginLeft: wp(7),
+    marginRight: wp(3),
   },
   fifthPageFirstColoredText: {
-    color: '#ffffff',
+    color: colorNumberOne,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
-    marginBottom: 5,
+    fontSize: hp(1.6),
+
+    fontFamily: 'Tajawal-Medium',
+    marginBottom: hp(.5),
   },
   fifthPageSecondColoredText: {
-    color: '#ffffff',
+    color: colorNumberOne,
 
-    fontSize: 19,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(2.5),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageSecondColoredContainer: {
-    backgroundColor: '#3c245f',
-    height: 100,
-    width: 100,
-    borderRadius: 15,
+    backgroundColor: colorNumberTwo,
+    height: hp(12),
+    width: wp(26),
+    borderRadius: wp(3),
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 15,
+    marginRight: wp(3),
   },
   fifthPageThirdColoredContainer: {
     backgroundColor: '#f2a400',
-    height: 100,
-    width: 100,
-    borderRadius: 15,
+    height: hp(12),
+    width: wp(26),
+    borderRadius: wp(3),
     justifyContent: 'center',
     alignItems: 'center',
   },
   fifthPageThirdColoredText: {
-    color: '#000000',
+    color: colorNumberNine,
 
-    fontSize: 11,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.6),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageFourthColoredText: {
-    color: '#000000',
+    color: colorNumberNine,
 
-    fontSize: 19,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(2.5),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageColoredContainerTwo: {
     width: '100%',
 
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginBottom: hp(1.5),
   },
   fifthPageColoredContainerTwoFirstText: {
-    color: '#e8272d',
+    color: colorNumberFive,
 
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: hp(1.9),
+
     fontFamily: 'Tajawal-Bold',
-    marginLeft: 15,
+    marginLeft: wp(7),
   },
   fifthPageColoredContainerTwoSecondText: {
-    color: '#e8272d',
+    color: colorNumberFive,
 
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: hp(1.9),
+
     fontFamily: 'Tajawal-Bold',
-    marginRight: 15,
+    marginRight: wp(9),
   },
   fifthPageRequestContainer: {
-    height: 200,
-    marginHorizontal: 15,
-    borderRadius: 30,
-    elevation: 20,
+    height: hp(25),
+    marginHorizontal: wp(7),
+    borderRadius: wp(7),
+    elevation: hp(3),
     justifyContent: 'space-around',
-    backgroundColor: 'white',
+    backgroundColor: colorNumberOne,
   },
   fifthPageRequestContainerOne: {
-    marginHorizontal: 5,
+    marginHorizontal: wp(4),
   },
   fifthPageRequestContainerFirstText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: hp(2.2),
+
     fontFamily: 'Tajawal-Bold',
   },
   fifthPageRequestContainerSecondText: {
-    color: '#6f6f6f',
+    color: colorNumberFour,
 
-    fontSize: 12,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.9),
+    lineHeight: hp(2.9),
+    fontFamily: 'Tajawal-Regular',
   },
   fifthPageInnerRequestContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginHorizontal: 5,
+    marginHorizontal: wp(4),
+
+
   },
   fifthPageInnerRequestContainerOne: {
     flex: 1,
+
   },
   fifthPageInnerRequestContainerFirstText: {
-    color: '#100e0e',
+    color: colorNumberTen,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.8),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageInnerRequestContainerSecondText: {
-    color: '#259146',
+    color: colorNumberEelven,
 
-    fontSize: 11,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.8),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageInnerRequestContainerTwo: {
     flex: 1,
-    justifyContent: 'flex-end',
+
+
   },
   fifthPageInnerRequestContainerThirdView: {
     width: '100%',
     alignItems: 'center',
   },
+  fifthPageInnerRequestContainerAlignView: {
+    width: "100%",
+    alignItems: "flex-start",
+  },
   fifthPageInnerRequestContainerThirdText: {
-    color: '#100e0e',
+    color: colorNumberTen,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.8),
+
+    fontFamily: 'Tajawal-Medium',
+
   },
   fifthPageInnerRequestContainerFourthView: {
     width: '93%',
     alignItems: 'center',
   },
   fifthPageInnerRequestContainerFourthText: {
-    color: '#0d204c',
+    color: colorNumberTwelve,
 
-    fontSize: 12,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.8),
+
+    fontFamily: 'Tajawal-Regular',
+
   },
-  fifthPageInnerRequestContainerOne: {
-    flex: 1,
-  },
+
   fifthPageInnerRequestContainerFithText: {
-    color: '#100e0e',
+    color: colorNumberTen,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.8),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageInnerRequestContainerSixthText: {
-    color: '#d65c20',
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    color: colorNumberThirteen,
+
+    fontSize: hp(1.8),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPageRedText: {
-    color: '#e8272d',
-    marginTop: 10,
-    fontSize: 14,
-    fontWeight: 'bold',
+    color: colorNumberFive,
+    marginTop: hp(2),
+    fontSize: hp(1.9),
+
     fontFamily: 'Tajawal-Bold',
-    marginLeft: 15,
-    marginBottom: 5,
+    marginLeft: wp(7),
+    marginTop: hp(2),
   },
   fifthPagePersonContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   fifthPagePersonFirstText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.85),
+
+    fontFamily: 'Tajawal-Medium',
   },
   fifthPagePersonSecondText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 10,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
-  },
-  fifthPageIconContainer: {
-    height: 40,
-    width: 40,
-    borderRadius: 20,
+    fontSize: hp(1.79),
 
-    justifyContent: 'center',
-    alignItems: 'center',
+    fontFamily: 'Tajawal-Regular',
   },
+
   fifthPageIconTwoContainer: {
     height: 40,
     width: 40,
@@ -677,10 +715,7 @@ export const firstPageStyles = StyleSheet.create({
     fontWeight: 'normal',
     fontFamily: 'Tajawal-Bold',
   },
-  sixthPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
+
   sixthPageItemView: {
     flexDirection: 'row',
     backgroundColor: '#ffffff',
@@ -695,181 +730,180 @@ export const firstPageStyles = StyleSheet.create({
     fontFamily: 'Tajawal-Bold',
     marginLeft: 20,
   },
+  sixthPageView: {
+    height: hp(93),
+    backgroundColor: colorNumberOne,
+  },
   sixthPagePersonView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginHorizontal: 15,
-    marginBottom: 8,
-    marginBottom: 20,
+    marginHorizontal: wp(3),
+    marginTop: wp(3),
+    marginBottom: wp(7),
   },
   sixthPagePersonContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   sixthPageFirstImage: {
-    height: 60,
-    width: 60,
-    borderRadius: 30,
+    height: hp(8),
+    width: hp(8),
+    borderRadius: hp(4),
   },
   sixthPageContainerView: {
-    marginLeft: 20,
+    marginLeft: wp(3),
   },
   sixthPageContainerViewFirstText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: hp(2),
+
     fontFamily: 'Tajawal-Bold',
   },
   sixthPageContainerViewSecondText: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.9),
+
+    fontFamily: 'Tajawal-Medium',
   },
   sixthPageArrowView: {
-    height: 26,
-    width: 26,
-    borderRadius: 13,
-    backgroundColor: '#3c245f',
+    height: hp(3),
+    width: hp(3),
+    borderRadius: hp(1.5),
+    backgroundColor: colorNumberTwo,
     justifyContent: 'center',
     alignItems: 'center',
   },
   sixthPageRequestContainerOne: {
-    marginHorizontal: 5,
+    marginHorizontal: wp(3),
+    marginBottom: hp(3.5),
   },
   sixthPageRequestContainerOneFirstView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginHorizontal: 15,
-    marginBottom: 15,
+
+    marginBottom: hp(1.5),
   },
   sixthPageSecondTextInView: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: hp(2),
     fontFamily: 'Tajawal-Bold',
   },
   sixthPageRequestContainerFirstText: {
-    color: '#afafaf',
+    color: colorNumberSixteen,
 
-    fontSize: 12,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.7),
+
+    fontFamily: 'Tajawal-Regular',
   },
   sixthPageRequestContainerSecondText: {
-    color: '#6f6f6f',
-    fontSize: 12,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 15,
-    marginBottom: 5,
-    lineHeight: 20,
+    color: colorNumberFour,
+    fontSize: hp(1.9),
+
+    fontFamily: 'Tajawal-Regular',
+
+
+    lineHeight: hp(2.7),
   },
   sixthPageConditionView: {
     flexDirection: 'row',
 
     justifyContent: 'center',
-    marginBottom: 25,
+    marginBottom: hp(4),
   },
   sixthPageAcceptView: {
-    backgroundColor: '#55ce5d',
-    borderRadius: 10,
+    backgroundColor: colorNumberSeventeen,
+    borderRadius: wp(3),
     justifyContent: 'center',
     alignItems: 'center',
-    height: 40,
-    width: 90,
+    height: hp(5),
+    width: hp(15),
     flexDirection: 'row',
-    marginRight: 5,
+    marginRight: wp(3),
   },
   sixthPageAcceptViewOne: {
-    marginLeft: 3,
+    marginLeft: wp(2),
   },
   sixthPageAcceptTextOne: {
-    color: '#ffffff',
+    color: colorNumberOne,
 
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: hp(2),
+
     fontFamily: 'Tajawal-Bold',
+
+
+
+
   },
   sixthPageRefuseView: {
-    backgroundColor: '#f05959',
-    borderRadius: 10,
+    backgroundColor: colorNumberEighteen,
+
     justifyContent: 'center',
     alignItems: 'center',
-    height: 40,
-    width: 90,
+
     flexDirection: 'row',
-    marginLeft: 5,
+
+
+    borderRadius: wp(3),
+    height: hp(5),
+    width: hp(15),
+
   },
   sixthPageFirstTextInContainerView: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 17,
-    fontWeight: 'bold',
+    fontSize: hp(2),
+
     fontFamily: 'Tajawal-Bold',
   },
 
   sixthPageSecondTextInContainerView: {
-    color: '#030303',
+    color: textColorOne,
 
-    fontSize: 12,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
-    paddingRight: 7,
+    fontSize: hp(1.9),
+
+    fontFamily: 'Tajawal-Medium',
+    paddingRight: wp(1),
   },
   sixthPageArrowViewOne: {
-    height: 26,
-    width: 26,
-    borderRadius: 13,
-    backgroundColor: '#4b504d',
+
+    backgroundColor: colorNumberNineteen,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  sixthPageBottomView: {
-    borderTopRightRadius: 20,
-    borderTopLeftRadius: 20,
-    height: 150,
-    width: '100%',
-    borderColor: '#ffffff',
-    borderWidth: 1,
-  },
-  sixthPageInnerBottomView: {
-    flexDirection: 'row',
-    height: '100%',
-    paddingTop: 20,
-    justifyContent: 'space-between',
-    paddingHorizontal: 4,
-    alignItems: 'center',
-  },
-  sixthPageFirstBottomText: {
-    color: '#3c245f',
 
-    fontSize: 10,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
-  },
-  sixthPageSecondBottomText: {
-    color: '#928989',
 
-    fontSize: 10,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    height: hp(3),
+    width: hp(3),
+    borderRadius: hp(1.5),
+
+
   },
-  seventhPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
+
+
+  seventhPageHeader: {
+    backgroundColor: colorNumberTwo,
+    borderBottomLeftRadius: wp(10),
+    borderBottomRightRadius: wp(10),
+    justifyContent: "center",
+    alignItems: "flex-start",
+
   },
-  seventhPageFirstView: {
-    height: 170,
-    backgroundColor: '#3c245f',
-    justifyContent: 'center',
-    borderBottomRightRadius: 30,
-    borderBottomLeftRadius: 30,
+  animatedView: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginHorizontal: wp(2),
   },
+  animatedViewText: {
+    color: colorNumberOne,
+    fontSize: hp(2.5),
+    fontFamily: "Tajawal-Bold",
+    marginLeft: wp(3),
+
+  },
+
   seventhPageItemView: {
     flexDirection: 'row',
   },
@@ -884,81 +918,75 @@ export const firstPageStyles = StyleSheet.create({
   seventhPageSecondView: {
     flexDirection: 'row',
     backgroundColor: 'white',
-    height: '60%',
+    height: 119,
     borderRadius: 20,
     marginHorizontal: 20,
-    position: 'relative',
-    bottom: -50,
+    position: 'absolute',
+    zIndex: 10,
     borderWidth: 1,
     borderColor: '#e7e7e7',
     paddingTop: 10,
-    paddingLeft: 10,
+    marginHorizontal: 20,
+
+    width: "100%",
+    top: -70,
+
   },
   seventhPageInnerFirstView: {
-    height: 70,
-    width: 70,
-    borderRadius: 35,
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
+    height: hp(10),
+    width: hp(10),
+    borderRadius: hp(5),
+    borderWidth: hp(.15),
+    borderColor: colorNumberTwenty,
     justifyContent: 'center',
+
   },
   seventhPageInnerSecondView: {
-    height: 70,
-    width: 70,
+    height: hp(10),
     flex: 1,
     justifyContent: 'center',
     alignItems: 'flex-start',
-    marginHorizontal: 10,
+    marginHorizontal: wp(3),
   },
   seventhPageFirstContainer: {
     flexDirection: 'row',
+    marginBottom: hp(1),
   },
   seventhPageFirstTextInContainer: {
-    color: '#3c245f',
+    color: colorNumberTwo,
 
-    fontSize: 12,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.9),
+    fontFamily: 'Tajawal-Regular',
+    marginLeft: wp(1),
   },
   seventhPageSecondContainer: {
     flexDirection: 'row',
   },
   seventhPageSecondTextInContainer: {
-    color: '#a6a6a6',
+    color: colorNumberTwentyOne,
 
-    fontSize: 11,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(1.7),
+    marginHorizontal: wp(2),
+
+    fontFamily: 'Tajawal-Regular',
   },
   seventhPageSameContainerOne: {
     flexDirection: 'row',
-    backgroundColor: 'white',
-    height: 119,
-    borderRadius: 20,
-    marginHorizontal: 20,
+    backgroundColor: colorNumberOne,
+    height: hp(15),
+    borderRadius: wp(4),
+    marginHorizontal: wp(4),
 
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
-    paddingTop: 10,
-    paddingLeft: 10,
-    marginTop: 50,
+    borderWidth: hp(.15),
+    borderColor: colorNumberTwenty,
+    alignItems: "center",
+    paddingHorizontal: wp(4),
+    marginVertical: hp(2),
   },
-  seventhPageSameContainerTwo: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    height: 119,
-    borderRadius: 20,
-    marginHorizontal: 20,
 
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
-    paddingTop: 10,
-    paddingLeft: 10,
-    marginTop: 5,
-  },
   eighthPageView: {
-    flex: 1,
-    backgroundColor: '#ffffff',
+    height: hp(93),
+    backgroundColor: colorNumberOne,
   },
   eighthPageItemView: {
     flexDirection: 'row',
@@ -967,77 +995,77 @@ export const firstPageStyles = StyleSheet.create({
     margin: 20,
   },
   eighthPageListView: {
-    height: 80,
+    height: hp(8),
     alignItems: 'center',
-    marginBottom: 25,
+    marginBottom: hp(5),
+    backgroundColor: colorNumberOne,
   },
   eighthPageListViewContainer: {
-    width: '60%',
-    borderRadius: 22,
+    width: '50%',
+    borderRadius: wp(3),
     height: '100%',
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
+    borderWidth: wp(.1),
+    borderColor: colorNumberTwenty,
     flexDirection: 'row',
+    alignItems: "center",
+    justifyContent: "center",
   },
   eighthPageListViewFirstContainer: {
-    width: 80,
+    width: "40%",
 
-    height: 60,
-    borderWidth: 1,
-    backgroundColor: '#3c245f',
-    borderRadius: 10,
+    height: "60%",
+    borderWidth: wp(.1),
+    backgroundColor: colorNumberTwo,
+    borderRadius: wp(3),
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
-    marginHorizontal: 10,
+
+    // marginHorizontal: wp(1.5),
   },
   eighthPageListViewFirstContainerText: {
-    color: 'white',
+    color: colorNumberOne,
 
-    fontSize: 16,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(2),
+    fontFamily: 'Tajawal-Regular',
   },
   eighthPageListViewSecondContainer: {
-    width: 80,
+    width: "40%",
 
-    height: 60,
+    height: "60%",
 
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
-    marginHorizontal: 10,
+    // marginTop: 10,
+    // marginHorizontal: 10,
   },
   eighthPageListViewSecondContainerText: {
-    color: '#1d1c1c',
+    color: colorNumberTwentyTwo,
 
-    fontSize: 16,
-    fontWeight: 'normal',
-    fontFamily: 'Tajawal-Bold',
+    fontSize: hp(2),
+    fontFamily: 'Tajawal-Regular',
   },
   eighthPageIconViewContainer: {
-    height: 60,
-    alignItems: 'center',
-    borderRadius: 20,
-    marginHorizontal: 20,
+    height: hp(8),
+    // alignItems: 'center',
+    borderRadius: wp(4),
+    marginHorizontal: wp(4),
 
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
+    borderWidth: wp(.1),
+    borderColor: colorNumberTwenty,
   },
   eighthPageIconViewFirstContainer: {
     flexDirection: 'row',
     width: '100%',
     height: '100%',
     alignItems: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: wp(5),
   },
   eighthPageIconViewFirstContainerText: {
-    color: '#454f63',
+    color: colorNumberTwentyThree,
 
-    fontSize: 20,
-    fontWeight: '600',
+    fontSize: hp(2.7),
     fontFamily: 'Tajawal-Bold',
-    marginHorizontal: 20,
+    marginHorizontal: wp(3),
   },
   eighthPageSameContainerOne: {
     flexDirection: 'row',
@@ -1102,7 +1130,8 @@ export const firstPageStyles = StyleSheet.create({
     marginTop: 5,
   },
   ninthPageFirstView: {
-    flex: 1,
+    height: hp(93),
+    backgroundColor: colorNumberOne,
   },
   ninthPageItemView: {
     flexDirection: 'row',
@@ -1119,117 +1148,94 @@ export const firstPageStyles = StyleSheet.create({
     marginLeft: 20,
   },
   ninthPageSameContainerTwo: {
-    backgroundColor: 'white',
-    height: 200,
-    borderRadius: 20,
-    marginHorizontal: 20,
+    backgroundColor: colorNumberOne,
+    height: hp(30),
+    borderRadius: wp(4),
+    marginHorizontal: wp(4),
 
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
+    borderWidth: wp(.1),
+    borderColor: colorNumberTwenty,
 
-    marginTop: 5,
-    marginBottom: 10,
+    marginVertical: hp(2),
   },
   ninthPageSameContainerTwoFirstView: {
-    flex: 1.5,
+    height: hp(7),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+
   },
   ninthPageSameContainerTwoFirstViewText: {
-    color: '#1d1c1c',
-    marginLeft: 22,
-    fontSize: 14,
-    fontWeight: '500',
-    fontFamily: 'Tajawal-Bold',
+    color: colorNumberTwentyTwo,
+    marginLeft: wp(4),
+    fontSize: hp(2.5),
+    fontFamily: 'Tajawal-Medium',
   },
   ninthPageFirstSpacer: {
     width: '100%',
-    height: 1,
-    backgroundColor: '#e7e7e7',
+    height: hp(.1),
+    backgroundColor: colorNumberTwenty,
+
   },
   ninthPageSameContainerTwoSecondView: {
-    flex: 1,
+    height: hp(5),
     flexDirection: 'row',
 
-    paddingHorizontal: 20,
+    marginHorizontal: wp(4),
   },
   ninthPageEnglishTextViewOne: {
-    flex: 1.1,
     alignItems: 'flex-start',
   },
   ninthPageSameContainerTwoSecondViewText: {
-    color: '#4a4a4a',
+    color: colorNumberTwentyFour,
 
-    fontSize: 12,
-    fontWeight: '300',
-    fontFamily: 'Roboto-Bold',
+    fontSize: hp(2),
+    fontFamily: 'Roboto-Light',
   },
   ninthPageSpacerView: {
-    flex: 3,
+    flex: 1,
   },
-  ninthPageSameContainerTwoInnerView: {
-    height: 30,
-    width: 30,
-    backgroundColor: '#238b43',
-    borderRadius: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 2,
-  },
+
   ninthPageEnglishTextView: {
-    flex: 1.3,
     alignItems: 'flex-start',
-    paddingLeft: 5,
+    marginHorizontal: wp(2.1),
+
   },
-  ninthPageSameContainerTwoInnerViewTwo: {
-    height: 30,
-    width: 30,
-    backgroundColor: 'white',
-    borderRadius: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: '#e7e7e7',
-  },
+
   ninthPageEnglishThirdTextView: {
-    paddingLeft: 23,
-    flex: 1.1,
+    marginLeft: wp(9),
+
     alignItems: 'flex-start',
   },
   ninthPageSameContainerTwoThirdViewText: {
-    color: '#4a4a4a',
+    color: colorNumberTwentyFour,
 
-    fontSize: 12,
-    fontWeight: '300',
-    fontFamily: 'Roboto-Bold',
+    fontSize: hp(1.8),
+
+    fontFamily: 'Roboto-Light',
+
   },
   ninthPageEnglishTextViewTwo: {
-    flex: 1.3,
+    marginLeft: hp(2),
     alignItems: 'flex-start',
-    paddingLeft: 10,
-  },
-  ninthPageSameContainerTwoSecondViewText: {
-    color: '#4a4a4a',
 
-    fontSize: 12,
-    fontWeight: '300',
-    fontFamily: 'Roboto-Bold',
   },
-  ninthPageThirdView: {
-    backgroundColor: '#3c245f',
+
+  bottomButton: {
+    backgroundColor: colorNumberTwo,
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
-    borderTopRightRadius: 30,
-    borderTopLeftRadius: 30,
-    marginHorizontal: 20,
+    borderTopLeftRadius: wp(8),
+    borderTopRightRadius: wp(8),
+    height: hp(10),
+    width: wp(90),
+    alignSelf: 'center',
   },
   ninthPageFifthText: {
-    color: '#ffffff',
-    fontSize: 18,
+    color: colorNumberOne,
+    fontSize: hp(2),
 
-    fontWeight: 'bold',
+
     fontFamily: 'Tajawal-Bold',
   },
 });

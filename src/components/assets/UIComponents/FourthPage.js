@@ -1,53 +1,40 @@
-import React, {Component} from 'react';
-import {Image, Text, View, TouchableOpacity, TextInput} from 'react-native';
-import {firstPageStyles} from '../styles/Styles.js';
+import React, { Component } from 'react';
+import { Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
+import { hp, styles, wp } from '../styles/Styles.js';
 
 class FourthPage extends Component {
   render() {
     return (
-      <View style={firstPageStyles.fourthPageView}>
-   
-
-        <View style={firstPageStyles.fourthPageFirstView}>
-          <View style={firstPageStyles.fourthPageSecondView}>
-            <Text style={firstPageStyles.fourthPageFirstText}>
-              من فضلك أدخل الكود المرسل إليك
-            </Text>
-            <View style={firstPageStyles.fourthPageImageView}>
-              <Image source={require('../images/phone.png')} />
-            </View>
-
-            <View style={firstPageStyles.fourthPageLineView}>
-              <View>
-                <Text style={firstPageStyles.fourthPageFirstLine}>4</Text>
-              </View>
-            </View>
-            <View style={firstPageStyles.fourthPageRowView}>
-              <View style={firstPageStyles.fourthPageSecondLineView}></View>
-              <View style={firstPageStyles.fourthPageSecondLineView}></View>
-              <View style={firstPageStyles.fourthPageSecondLineView}></View>
-              <View style={firstPageStyles.fourthPageFirstLineView}></View>
-            </View>
-
-            <View style={firstPageStyles.fourthPageMessageView}>
-              <TouchableOpacity>
-                <Text style={firstPageStyles.fourthPageMessageText}>
-                  إعادة إرسال
-                </Text>
-                <View style={firstPageStyles.fourthPageMessageLineView}></View>
-              </TouchableOpacity>
-            </View>
+      <View style={styles.fourthPageFirstView}>
+        <View style={styles.fourthPageSecondView}>
+          <Text style={styles.fourthPageFirstText}>
+            من فضلك أدخل الكود المرسل إليك
+          </Text>
+          <View style={styles.fourthPageImageView}>
+            <Image source={require('../images/phone.png')} />
           </View>
-          <TouchableOpacity style={firstPageStyles.fourthPageBottom}>
-            <View style={firstPageStyles.fourthPageThirdView}>
-              <Text style={firstPageStyles.fourthPageFifthText}>
-                إدخال الكود
-              </Text>
-            </View>
+          <View style={styles.textInputView}>
+
+            <TextInput style={styles.secondTextInputView} />
+            <TextInput style={styles.secondTextInputView} />
+            <TextInput style={styles.secondTextInputView} />
+            <TextInput style={styles.firstTextInputView} />
+          </View>
+
+          <TouchableOpacity style={styles.fourthPageMessageView} >
+            <Text style={styles.fourthPageMessageText}>إعادة إرسال</Text>
+            <View style={styles.fourthPageMessageLineView}></View>
           </TouchableOpacity>
+
         </View>
+        <TouchableOpacity style={styles.fourthPageBottom}>
+          <View style={styles.fourthPageThirdView}>
+            <Text style={styles.fourthPageFifthText}>إدخال الكود</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     );
   }
 }
 export default FourthPage;
+

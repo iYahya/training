@@ -1,76 +1,68 @@
 import React, { Component } from 'react';
 
-import { firstPageStyles } from "../styles/Styles.js";
+import { hp, styles } from "../styles/Styles.js";
 
 import { Image, Text, View, TouchableOpacity, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 class SixthPage extends Component {
     render() {
         return (
-            <View style={firstPageStyles.sixthPageView}>
-                <TouchableOpacity>
-                    <View style={firstPageStyles.sixthPageItemView}>
-                        <Image source={require('../images/iconTwo.png')} />
-                        <Text style={firstPageStyles.sixthPageSeventhText}>الطلبات </Text>
-                    </View>
-                </TouchableOpacity>
+            <View style={styles.sixthPageView}>
 
-                <View style={firstPageStyles.sixthPagePersonView}>
-                    <View style={firstPageStyles.sixthPagePersonContainer}>
+                <View style={styles.sixthPagePersonView}>
+                    <View style={styles.sixthPagePersonContainer}>
                         <Image
-                            style={firstPageStyles.sixthPageFirstImage}
+                            style={styles.sixthPageFirstImage}
                             source={require('../images/personThree.png')}
                         />
-                        <View style={firstPageStyles.sixthPageContainerView}>
-                            <Text style={firstPageStyles.sixthPageContainerViewFirstText}>محمد سليمان</Text>
-                            <Text style={firstPageStyles.sixthPageContainerViewSecondText}>
+                        <View style={styles.sixthPageContainerView}>
+                            <Text style={styles.sixthPageContainerViewFirstText}>محمد سليمان</Text>
+                            <Text style={styles.sixthPageContainerViewSecondText}>
                                 محاسب              </Text>
                         </View>
                     </View>
-                    <View style={firstPageStyles.sixthPageArrowView}>
+                    <View style={styles.sixthPageArrowView}>
 
-                        <Icon name="arrow-up" color={"white"} size={10} />
+                        <Icon name="arrow-up" color={"white"} size={hp(1.1)} />
                     </View>
                 </View>
 
-                <View style={firstPageStyles.sixthPageRequestContainerOne}>
-                    <View style={firstPageStyles.sixthPageRequestContainerOneFirstView}>
-                        <Text style={firstPageStyles.sixthPageSecondTextInView}>
+                <View style={styles.sixthPageRequestContainerOne}>
+                    <View style={styles.sixthPageRequestContainerOneFirstView}>
+                        <Text style={styles.sixthPageSecondTextInView}>
                             عنوان الطلب
                         </Text>
-                        <Text style={firstPageStyles.sixthPageRequestContainerFirstText}>
+                        <Text style={styles.sixthPageRequestContainerFirstText}>
                             25/2/2020            </Text>
                     </View>
 
-                    <Text style={firstPageStyles.sixthPageRequestContainerSecondText}>
+                    <Text style={styles.sixthPageRequestContainerSecondText}>
                         هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
-
-
                         لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                     </Text>
                 </View>
 
 
 
-                <View style={firstPageStyles.sixthPageConditionView}>
-                    <View style={firstPageStyles.sixthPageAcceptView}>
+                <View style={styles.sixthPageConditionView}>
+                    <View style={styles.sixthPageAcceptView}>
                         <View >
                             <Image source={require('../images/like.png')} />
 
                         </View>
-                        <View style={firstPageStyles.sixthPageAcceptViewOne}>
-                            <Text style={firstPageStyles.sixthPageAcceptTextOne} >قبول</Text>
+                        <View style={styles.sixthPageAcceptViewOne}>
+                            <Text style={styles.sixthPageAcceptTextOne} >قبول</Text>
                         </View>
 
                     </View>
 
-                    <View style={firstPageStyles.sixthPageRefuseView}>
+                    <View style={styles.sixthPageRefuseView}>
                         <View >
                             <Image source={require('../images/like.png')} />
 
                         </View>
-                        <View style={firstPageStyles.sixthPageAcceptViewOne}>
-                            <Text style={firstPageStyles.sixthPageAcceptTextOne} >رفض</Text>
+                        <View style={styles.sixthPageAcceptViewOne}>
+                            <Text style={styles.sixthPageAcceptTextOne} >رفض</Text>
                         </View>
 
                     </View>
@@ -84,80 +76,61 @@ class SixthPage extends Component {
 
 
 
-                <View style={firstPageStyles.sixthPagePersonView}>
-                    <View style={firstPageStyles.sixthPagePersonContainer}>
+                <View style={styles.sixthPagePersonView}>
+                    <View style={styles.sixthPagePersonContainer}>
                         <Image
-                            style={firstPageStyles.sixthPageFirstImage}
+                            style={styles.sixthPageFirstImage}
                             source={require('../images/personFour.png')}
                         />
-                        <View style={firstPageStyles.sixthPageContainerView}>
-                            <Text style={firstPageStyles.sixthPageFirstTextInContainerView}> عنوان الطلب</Text>
-                            <Text style={firstPageStyles.sixthPageSecondTextInContainerView}>
+                        <View style={styles.sixthPageContainerView}>
+                            <Text style={styles.sixthPageFirstTextInContainerView}> عنوان الطلب</Text>
+                            <Text style={styles.sixthPageSecondTextInContainerView}>
                                 محمد سليمان            </Text>
                         </View>
                     </View>
-                    <View style={firstPageStyles.sixthPageArrowViewOne}>
+                    <View style={styles.sixthPageArrowViewOne}>
 
-                        <Icon name="arrow-down" color={"white"} size={10} />
+                        <Icon name="arrow-down" color={"white"} size={hp(1.1)} />
                     </View>
                 </View>
-                <View style={firstPageStyles.sixthPagePersonView}>
-                    <View style={firstPageStyles.sixthPagePersonContainer}>
+                <View style={styles.sixthPagePersonView}>
+                    <View style={styles.sixthPagePersonContainer}>
                         <Image
-                            style={firstPageStyles.sixthPageFirstImage}
+                            style={styles.sixthPageFirstImage}
                             source={require('../images/person.jpg')}
                         />
-                        <View style={firstPageStyles.sixthPageContainerView}>
-                            <Text style={firstPageStyles.sixthPageFirstTextInContainerView}> عنوان الطلب</Text>
-                            <Text style={firstPageStyles.sixthPageSecondTextInContainerView}>
+                        <View style={styles.sixthPageContainerView}>
+                            <Text style={styles.sixthPageFirstTextInContainerView}> عنوان الطلب</Text>
+                            <Text style={styles.sixthPageSecondTextInContainerView}>
                                 محمد سليمان            </Text>
                         </View>
                     </View>
-                    <View style={firstPageStyles.sixthPageArrowViewOne}>
+                    <View style={styles.sixthPageArrowViewOne}>
 
-                        <Icon name="arrow-down" color={"white"} size={10} />
+                        <Icon name="arrow-down" color={"white"} size={hp(1.1)} />
                     </View>
                 </View>
-                <View style={firstPageStyles.sixthPagePersonView}>
-                    <View style={firstPageStyles.sixthPagePersonContainer}>
+                <View style={styles.sixthPagePersonView}>
+                    <View style={styles.sixthPagePersonContainer}>
                         <Image
-                            style={firstPageStyles.sixthPageFirstImage}
+                            style={styles.sixthPageFirstImage}
                             source={require('../images/personFive.png')}
                         />
-                        <View style={firstPageStyles.sixthPageContainerView}>
-                            <Text style={firstPageStyles.sixthPageFirstTextInContainerView}> عنوان الطلب</Text>
-                            <Text style={firstPageStyles.sixthPageSecondTextInContainerView}>
+                        <View style={styles.sixthPageContainerView}>
+                            <Text style={styles.sixthPageFirstTextInContainerView}> عنوان الطلب</Text>
+                            <Text style={styles.sixthPageSecondTextInContainerView}>
                                 محمد سليمان            </Text>
                         </View>
                     </View>
-                    <View style={firstPageStyles.sixthPageArrowViewOne}>
+                    <View style={styles.sixthPageArrowViewOne}>
 
-                        <Icon name="arrow-down" color={"white"} size={10} />
+                        <Icon name="arrow-down" color={"white"} size={hp(1.1)} />
                     </View>
                 </View>
 
 
-                <View style={firstPageStyles.sixthPageBottomView}>
-                    <View style={firstPageStyles.sixthPageInnerBottomView}>
-                        <View>
-                            <Image source={require('../images/home.png')} />
-                            <Text style={firstPageStyles.sixthPageFirstBottomText}>الرئيسية </Text>
-                        </View>
-                        <View>
-                            <Image source={require('../images/order.png')} />
-                            <Text style={firstPageStyles.sixthPageSecondBottomText}>الطلبات </Text>
-                        </View>
-                        <View>
-                            <Image source={require('../images/note.png')} />
-                            <Text style={firstPageStyles.sixthPageSecondBottomText} >الإشعارات </Text>
-                        </View>
-                        <View>
-                            <Image source={require('../images/settings.png')} />
-                            <Text style={firstPageStyles.sixthPageSecondBottomText}>الإعدادات </Text>
-                        </View>
-                    </View>
-                </View>
             </View>
+
         );
     }
 }

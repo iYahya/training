@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {StackActions, CommonActions} from '@react-navigation/native';
+import { StackActions, CommonActions } from '@react-navigation/native';
 
 export const navigationRef = React.createRef();
 export const isReadyRef = React.createRef();

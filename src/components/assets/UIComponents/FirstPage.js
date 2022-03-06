@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   Image,
   Text,
@@ -7,49 +7,59 @@ import {
   TouchableOpacity,
   StatusBar,
 } from 'react-native';
-import {firstPageStyles} from '../styles/Styles.js';
+import { styles } from '../styles/Styles.js';
 
 class FirstPage extends Component {
+
   state = {
     lang: 'ar',
   };
+
+
+
   render() {
-    const {lang} = this.state;
+    const { lang } = this.state;
+    const { navigation } = this.props;
+
     return (
-      <View style={firstPageStyles.firstPageFirstView}>
+      <View style={styles.firstPageFirstView}>
         <StatusBar backgroundColor={'#fff'} barStyle="dark-content" />
-        <View style={firstPageStyles.firstPageSecondView}>
-          <Text style={firstPageStyles.firstPageFirstText}> مرحبا بك </Text>
+        <View style={styles.firstPageSecondView}>
+          <Text style={styles.firstPageFirstText}> مرحبا بك </Text>
           <Image source={require('../images/second.png')} />
-          <Text style={firstPageStyles.firstPageSecondText}>
+          <Text style={styles.firstPageSecondText}>
             اللغة المفضلة لك فى الاستخدام
           </Text>
-          <View style={firstPageStyles.firstPageView}>
-            <TouchableOpacity onPress={() => this.setState({lang: 'ar'})}>
+          <View style={styles.firstPageView}>
+            <TouchableOpacity onPress={() => this.setState({ lang: 'ar' })}>
               <Text
                 style={[
                   lang == 'ar'
-                    ? firstPageStyles.firstPageThirdText
-                    : firstPageStyles.firstPageFourthText,
+                    ? styles.firstPageThirdText
+                    : styles.firstPageFourthText,
                 ]}>
                 عربى
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => this.setState({lang: 'en'})}>
+            <TouchableOpacity onPress={() => this.setState({ lang: 'en' })}>
               <Text
                 style={[
                   lang == 'en'
-                    ? firstPageStyles.firstPageThirdText
-                    : firstPageStyles.firstPageFourthText,
+                    ? styles.firstPageThirdText
+                    : styles.firstPageFourthText,
                 ]}>
                 English
               </Text>
             </TouchableOpacity>
           </View>
         </View>
-        <TouchableOpacity style={firstPageStyles.primaryButton}>
+        <TouchableOpacity style={styles.primaryButton} onPress={function () {
+          navigation.navigate("SecondPage");
+
+        }}>
           <View>
-            <Text style={firstPageStyles.firstPageFifthText}>التالى</Text>
+            <Text style={styles.firstPageFifthText}>التالي
+            </Text>
           </View>
         </TouchableOpacity>
       </View>
